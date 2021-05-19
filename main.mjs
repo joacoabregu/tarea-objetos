@@ -15,3 +15,30 @@ let borges = new Autor({
 // console.log(borges.getLibros());
 // console.log(borges.getMail());
 
+/* try {
+    borges.setNombre('Julio')
+} catch (error) {
+    console.error(error.message)
+}
+try {
+    borges.setMail('jor@borges.com')
+} catch (error) {
+    console.error(error.message)
+}
+try {
+    borges.setGeneros(['Ciencia Ficcion'])
+} catch (error) {
+    console.error(error.message)
+}
+try {
+    borges.setBio('Probando Bio')
+} catch (error) {
+    console.error(error.message)
+}
+try {
+    borges.setLibros(['Harry Potter'])
+} catch (error) {
+    console.error(error.message)
+}
+
+ console.log(borges); */
