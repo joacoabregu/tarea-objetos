@@ -8,4 +8,10 @@ let borges = new Autor({
     mail: 'jorgitoborges@borges.com' 
 });
 
-console.log(borges);
+// console.log(borges);
+// console.log(borges.getBio());
+// console.log(borges.getGenero());
+// console.log(borges.getNombre());
+// console.log(borges.getLibros());
+// console.log(borges.getMail());
+
