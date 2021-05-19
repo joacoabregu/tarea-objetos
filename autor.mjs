@@ -1,4 +1,4 @@
-class Autor {
+export default class Autor {
     constructor(data = {}) {
         this.nombre = data.nombre || '';
         this.bio = data.bio || '';
