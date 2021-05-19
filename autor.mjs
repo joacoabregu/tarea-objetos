@@ -23,15 +23,15 @@ export default class Autor {
         
     }
     setLibros(_libros) {
-        if(typeof _libros === 'array'){
+        if(Array.isArray(_libros)){
             this.libros = _libros;
         } else {
             throw new Error('libros must be an array');
         }   
         
     }
-    setGenero(_genero) {
-        if(typeof _genero === 'array'){
+    setGeneros(_genero) {
+        if(Array.isArray(_genero)){
             this.generos= _genero;
         } else {
             throw new Error('generos must be an array');
