@@ -1,5 +1,6 @@
 import Autor from "./autor.mjs";
 import Notas from "./notas.mjs";
+import Libreta from "./libreta.mjs";
 
 let borges = new Autor({
     nombre: "Jorge Luis Borges",
@@ -10,11 +11,21 @@ let borges = new Autor({
 });
 
 let notaBorges = new Notas({
+    autor: "Jorge",
+    nota: ' Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec turpis sapien, hendrerit ut arcu eu, gravida porttitor felis. Cras libero elit, imperdiet eu ipsum in, feugiat vestibulum sem. Suspendisse potenti. Pellentesque elementum quam quis ex luctus tempus sed id est. Suspendisse vitae magna venenatis, tristique velit a, convallis sem. Fusce tristique risus a vulputate pulvinar. Phasellus maximus neque a sagittis rutrum. Aliquam erat volutpat. Vestibulum nec libero a purus dapibus rutrum. Pellentesque finibus ultricies laoreet. Nulla fringilla hendrerit ante ac venenatis. Maecenas pulvinar lacinia accumsan. Nulla libero dolor, molestie aliquet sagittis nec, consequat eu mauris. Pellentesque dui sem, bibendum dignissim venenatis a, placerat quis libero. Ut non sollicitudin eros. Etiam tempus, sapien nec egestas dignissim, ipsum quam tempor nunc, vel fermentum sapien sapien nec lacus. Cras eu felis massa. Nullam volutpat iaculis turpis fringilla commodo. Quisque ac dui eu augue pharetra iaculis. Proin maximus lacus at facilisis condimentum. Nam ultrices consectetur eros, eu pellentesque diam tempor vel. In sodales tincidunt est sollicitudin viverra. ',
+    fecha: '19/5/1955',
+    tag: ['nuevo', 'poesia']
+});
+let notaBorges2 = new Notas({
+    autor: "Jorge",
     nota: ' Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec turpis sapien, hendrerit ut arcu eu, gravida porttitor felis. Cras libero elit, imperdiet eu ipsum in, feugiat vestibulum sem. Suspendisse potenti. Pellentesque elementum quam quis ex luctus tempus sed id est. Suspendisse vitae magna venenatis, tristique velit a, convallis sem. Fusce tristique risus a vulputate pulvinar. Phasellus maximus neque a sagittis rutrum. Aliquam erat volutpat. Vestibulum nec libero a purus dapibus rutrum. Pellentesque finibus ultricies laoreet. Nulla fringilla hendrerit ante ac venenatis. Maecenas pulvinar lacinia accumsan. Nulla libero dolor, molestie aliquet sagittis nec, consequat eu mauris. Pellentesque dui sem, bibendum dignissim venenatis a, placerat quis libero. Ut non sollicitudin eros. Etiam tempus, sapien nec egestas dignissim, ipsum quam tempor nunc, vel fermentum sapien sapien nec lacus. Cras eu felis massa. Nullam volutpat iaculis turpis fringilla commodo. Quisque ac dui eu augue pharetra iaculis. Proin maximus lacus at facilisis condimentum. Nam ultrices consectetur eros, eu pellentesque diam tempor vel. In sodales tincidunt est sollicitudin viverra. ',
     fecha: '19/5/1955',
     tag: ['nuevo', 'poesia']
 });
 
+let miLibreta = new Libreta;
+
+// Prueba clase Autor
 // console.log(borges);
 // console.log(borges.getBio());
 // console.log(borges.getGenero());
@@ -50,7 +61,9 @@ try {
 
  console.log(borges); */
 
+ // Prueba clase Notas
  // console.log(notaBorges);
+// console.log(notaBorges.getAutor());
 // console.log(notaBorges.getNota());
 // console.log(notaBorges.getFecha());
 // console.log(notaBorges.getTag());
@@ -71,3 +84,9 @@ try {
     console.error(error.message)
 }
 console.log(notaBorges); */
+
+// Prueba Libreta de notas
+
+/* miLibreta.nota1 = notaBorges;
+miLibreta.nota2 = notaBorges2;
+console.log(miLibreta.getNotasAutor("Jorge")); */
